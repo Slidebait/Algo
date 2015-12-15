@@ -1,0 +1,30 @@
+#include <conio.h>
+#include <stdio.h>
+
+void echanger(int tab[], int i, int j)
+     {
+     int memoire;
+     memoire=tab[i];
+     tab[i]=tab[j];
+     tab[j]=memoire;
+     }
+
+//fonction qui permet de tester le programme d'echange
+void main(void)
+     {
+     int i;
+     int tableau[]={1,4,3,2,5};
+     printf("tableau avant premutation \n");
+     for(i=0;i<5;i++)
+             {
+             printf("%i,",tableau[i]);
+             }
+     echanger(tableau,1,3);
+     printf("\n tableau apres permutation \n");
+     for(i=0;i<5;i++)
+             {
+             printf("%i,",tableau[i]);
+             }
+     printf("\n appuyez sur une touche pour terminer le programme");
+     getch();
+     }
