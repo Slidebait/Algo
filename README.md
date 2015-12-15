@@ -1,2 +1,0 @@
-# Algo
-Algorithme de calcul
