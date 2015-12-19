@@ -1,0 +1,24 @@
+public class Polynome implements Fonction
+{
+
+    private double a;
+    private double b;
+    private double c;
+
+    public Polynome(double a, double b, double c)
+	{
+	    this.a = a;
+	    this.b = b;
+	    this.c = c;
+	}
+
+    public double f(double x)
+	{
+	    return a*x*x + b*x + c;
+	}
+
+    public String toString()
+    {
+	return "P(x) = "+a+" x^2 + "+b+" x + "+c;
+    }
+}
